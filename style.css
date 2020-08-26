@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 ul {
   display: flex;
   justify-content: space-around;
@@ -51,21 +52,22 @@ ul {
   justify-content: center;
 }
 
-.parallax-text {
+.parallax-text,
+.parallax-title {
   position: absolute;
   font-family: "Montserrat", sans-serif;
   font-size: 25vw;
   font-style: italic;
 }
 
-.parallax-text::after {
+.parallax-title::after {
   content: attr(text);
   position: absolute;
   z-index: 100;
   top: 0;
   left: 0;
   color: transparent;
-  -webkit-text-stroke: 0.15vw bisque;
+  -webkit-text-stroke: 0.15vw rgba(219, 179, 0, 0.253);
 }
 
 .logo {
@@ -106,7 +108,8 @@ ul {
   margin-top: 30px;
 }
 .hr-about {
-  width: 300px;
+  width: 120px;
+  border: 1px solid grey;
   margin: auto;
   background-color: lightgray;
 }
@@ -284,8 +287,13 @@ ul {
   font-size: 2.5em;
   font-weight: 700;
   color: #111;
+  border: 0.5px solid white;
+  text-shadow: 1px 1px white;
+  border-radius: 5px;
+  padding: 20px;
   overflow-y: hidden;
 }
+
 @media (min-width: 54em) {
   .slide__title {
     font-size: 5em;
@@ -477,8 +485,8 @@ ul {
 .iphone {
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
-  /* transform: scale(1.2); */
+  object-fit: cover;
+  transform: scale(1.2);
 }
 
 .text-container {
@@ -495,11 +503,11 @@ ul {
 .text-container__front {
   z-index: 3;
 }
-.text-container__front .parallax-text {
+.text-container__front .parallax-text,
+.parallax-title {
   color: transparent;
   -webkit-text-stroke: 0.2vw #f7f7f7;
 }
-
 .parallax-text {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -507,27 +515,24 @@ ul {
   line-height: 10vw;
   text-transform: uppercase;
   white-space: nowrap;
-  color: lightblue;
+  color: lightslategray;
+  margin: 0;
+}
+.parallax-title {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12vw;
+  line-height: 10vw;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-image: linear-gradient(to right bottom, lightgray, black);
+  -webkit-background-clip: text;
+  color: transparent;
   margin: 0;
 }
 .parallax-text:last-child {
   align-self: flex-end;
 }
-
-/* ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar {
-  width: 2px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-color: #555;
-} */
 
 .first-row {
   display: flex;
@@ -888,6 +893,7 @@ ul {
 }
 
 .footer {
+  margin-top: 70px;
   background-color: #343a40;
   padding: 40px;
 }

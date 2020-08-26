@@ -134,7 +134,7 @@
 
 function parallax(element, distance, speed) {
   const item = document.querySelector(element);
-  item.style.transform = `translateY(${distance * speed}px)`;
+  item.style.transform = `translateY(${distance * speed * 7}px)`;
 }
 
 // window.addEventListener("scroll", function () {
