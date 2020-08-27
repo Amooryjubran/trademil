@@ -158,10 +158,10 @@ textContainers.forEach((element, index) => {
     scrollTrigger: {
       trigger: element,
       scrub: true,
-      start: start + "px bottom",
+      start: start - "px bottom",
       end: "bottom top",
     },
-    x: "-54vw",
+    x: "-20vw",
     transformOrigin: "left center",
     ease: "none",
   });
@@ -169,7 +169,7 @@ textContainers.forEach((element, index) => {
     scrollTrigger: {
       trigger: element,
       scrub: true,
-      start: start + "px bottom",
+      start: start - "px bottom",
       end: "bottom top",
     },
     x: "32vw",
