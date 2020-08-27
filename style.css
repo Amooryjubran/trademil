@@ -160,6 +160,8 @@ ul {
 .slider-pgae {
   height: 100%;
   overflow-y: hidden;
+  margin-top: -120px;
+  margin-bottom: -120px;
 }
 
 .slides-nav {
@@ -474,6 +476,7 @@ ul {
 .section-for-thegm {
   position: relative;
   padding: 10vw 0;
+  margin-top: -120px;
   overflow: hidden;
 }
 
@@ -526,7 +529,10 @@ ul {
   line-height: 10vw;
   text-transform: uppercase;
   white-space: nowrap;
-  color: lightslategray;
+  background-image: linear-gradient(to right bottom, lightgray, black);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0.5;
   margin: 0;
 }
 .parallax-title {
@@ -921,6 +927,7 @@ ul {
   background: url("https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
     no-repeat center;
   background-size: cover;
+  margin-top: 20px;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -974,4 +981,11 @@ textarea.contact-form-text {
 }
 .contact-form-btn:hover {
   background: #2980b9;
+}
+
+.hr-loadinng {
+  width: 400px;
+  margin: auto;
+  border: 1px solid lightgray;
+  opacity: 0.7;
 }
