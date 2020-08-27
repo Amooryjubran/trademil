@@ -39,6 +39,7 @@ ul {
   height: 1500px; /* Used in this example to enable scrolling */
 }
 .header {
+  overflow: hidden;
   height: 100vh;
   margin: 0;
   /* background-color: #f7f7f7; */
@@ -103,6 +104,7 @@ ul {
   padding-bottom: 10px;
 }
 .abt h1 {
+  font-family: sans-serif;
   text-align: center;
   margin-top: 30px;
 }
@@ -113,22 +115,31 @@ ul {
   background-color: lightgray;
 }
 .about-logo {
-  height: 200px;
   width: 200px;
   opacity: 0.8;
+  overflow: hidden;
 }
 .abt-div p {
-  width: 800px;
+  max-width: 800px;
   font-family: sans-serif;
   padding: 30px 20px;
   text-align: center;
 
   font-size: 1.5rem;
 }
+
 .abt-div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media screen and (max-width: 870px) {
+  .abt-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 /* .about-me {
@@ -901,7 +912,8 @@ ul {
 }
 .footer h1 {
   color: #899d9a;
-  font-size: 20px;
+  font-size: 16px;
+  font-family: sans-serif;
   text-align: center;
 }
 
@@ -919,7 +931,7 @@ ul {
   color: #ddd;
 }
 .border {
-  width: 100px;
+  width: 80px;
   height: 10px;
   background: #34495e;
   margin: 40px auto;
@@ -958,6 +970,7 @@ textarea.contact-form-text {
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
+  outline: none;
 }
 .contact-form-btn:hover {
   background: #2980b9;
