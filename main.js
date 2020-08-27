@@ -177,23 +177,3 @@ textContainers.forEach((element, index) => {
     ease: "none",
   });
 });
-
-// // for presentation
-// let tl = gsap.timeline({
-//   repeat: -1
-// });
-
-// tl.set({}, {}, 0.6);
-// tl.to(window, {
-//   duration: 4,
-//   scrollTo: {
-//     y:"max"
-//   },
-//   ease: Power2.easeInOut
-// });
-// tl.to(window, {
-//   delay: 0.6,
-//   duration: 4,
-//   scrollTo: 0,
-//   ease: Power2.easeInOut
-// });
